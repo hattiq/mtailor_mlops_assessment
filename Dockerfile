@@ -15,9 +15,9 @@ RUN pip3 install -r requirements.txt
 ADD server.py .
 
 # Add your model weight files 
-# (in this case we have a python script)
-ADD download.py .
-RUN python3 download.py
+ADD convert_to_onnx.py .
+RUN wget https://www.dropbox.com/s/b7641ryzmkceoc9/pytorch_model_weights.pth
+RUN python3 convert_to_onnx.py
 
 
 # Add your custom app code, init() and inference()
