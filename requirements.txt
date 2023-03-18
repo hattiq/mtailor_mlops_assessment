@@ -2,3 +2,4 @@ sanic==22.6.2
 accelerate
 onnx
 onnx2torch
+onnxruntime
