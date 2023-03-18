@@ -19,7 +19,12 @@ python test_onnx.py
 ```
 
 ## Testing banana.dev deployment
+To run on test images.
 ```bash
 python test_server.py
+```
+To test on custom image:
+```
+python test_server.py "./n01440764_tench.jpeg"
 ```
 
